@@ -1,0 +1,29 @@
+#city-input, #weather-output {
+    max-width: 400px;
+
+}
+
+.banner {
+    color:#f5bd04;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(104, 200, 200);
+}
+
+.form-group{
+    padding-left: 36%;
+}
+.mt-3{
+    margin-left: 36%;
+    
+}
+#li1{
+    margin-right: 40%;
+}
+#li2{
+    margin-right: 40%;
+}
+#li3{
+    margin-right: 40%;
+}
