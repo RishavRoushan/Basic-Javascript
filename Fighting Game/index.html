@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lets Fight</title>
+</head>
+<body>
+  <h1>  Fighting Game </h1>
+    
+  <br>
+  
+  <div class="menu">
+    <div class="p1Info">
+
+      <div id="p1Name">Player 1</div>
+      
+      <img 
+      id="p1" 
+      src="img/0019f6845ceaa9347b881ccbe8f5644a_w200.gif"/>
+      
+      <div class="playerControls">
+
+        <div class="AttackDiv">
+          <h3>Q:</h3>
+          <button 
+            onclick = "player1.strike(player1, player2, player1.attackDmg)"  
+            id="attack"
+          >
+            Attack
+          </button>
+        </div>
+
+        <div class="HealDiv">
+          <h3>A:</h3>
+          <button 
+            onclick = "player1.heal(player1)" 
+            id="heal"
+          >
+            Heal
+          </button>
+          </div>
+      </div>
+      
+      <div  id="p1Health">100</div>
+    </div>
+
+      <button id="play">Simulate</button>
+
+    <div class="p2Info">
+
+      <div id="p2Name">Player 2</div>
+      
+      <img 
+        id="p2" 
+        src="img/Z0QCi47.gif"
+      />
+      <div class="playerControls">
+        <div class="AttackDiv">
+          <h3>P:</h3>
+          <button 
+            onclick = "player2.strike(player2, player1, player2.attackDmg)"  
+            id="attack"
+          >
+            Attack
+          </button>
+        </div>
+        <div class="HealDiv">
+          <h3>L:</h3>          
+          <button 
+            onclick = "player2.heal(player2)" 
+            id="heal"
+          >
+            Heal
+          </button>
+        </div>
+      </div>
+      
+      <div id="p2Health">100</div>
+    </div>
+
+  </div>
+  <br>
+  
+  <div class="resultContainer">
+      <div id="result"></div>
+      <button id="reset" onclick="game.reset(p1,p2)">Reset</button>
+  </div>
+
+<audio id="p1attack" controls style="display:none">
+  <source src="sounds/download (1).mp3" type="audio/mpeg"> 
+</audio>
+<audio id="p1heal" controls style="display:none">
+  <source src="sounds/download (2).mp3" type="audio/mpeg"> 
+</audio>
+<audio id="p2attack" controls style="display:none">
+  <source src="sounds/download (3).mp3" type="audio/mpeg"> 
+</audio>
+<audio id="p2heal" controls style="display:none">
+  <source src="sounds/download.mp3" type="audio/mpeg"> 
+</audio>
+  <script src="logic.js"></script>
+</body>
+<audio id="victory" controls style="display:none">
+  <source src="sounds/download (4).mp3" type="audio/mpeg"> 
+</audio>
+</body>
+</html>
